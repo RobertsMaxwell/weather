@@ -34,7 +34,7 @@
   .weather .main {
     width: 500px;
     height: 600px;
-    font-size: 30px;
+    font-size: min(2vw, 30px);
   }
 
   .weather .main #temp {
@@ -53,6 +53,10 @@
     flex-wrap: nowrap;
   }
 
+  .weather #daily .day {
+    font-size: min(1.7vw, 25px);
+  }
+
   .weather #daily .day img {
     margin-top: auto;
     margin-bottom: auto;
@@ -67,10 +71,12 @@
   .weather #hourly .hour img {
     width: 5.5vw;
     max-width: 90px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .weather .main #location {
-    font-size: 30px;
+    font-size: min(2.5vw, 32px)
   }
 }
 
@@ -118,6 +124,10 @@
     flex-wrap: wrap;
   }
 
+  .weather #daily .day {
+    font-size: 20px;
+  }
+
   .weather #daily .day img {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -130,6 +140,8 @@
 
   .weather #hourly .hour img {
     width: 90px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -387,7 +399,6 @@ body {
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  font-size: 25px;
   box-sizing: border-box;
   flex: 1;
   border-radius: var(--card-border-radius);
@@ -424,11 +435,6 @@ body {
 
 .weather #hourly .hour p:last-child {
   font-size: 30px;
-}
-
-.weather #hourly .hour img {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 /* footer */
