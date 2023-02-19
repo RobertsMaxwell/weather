@@ -38,7 +38,7 @@
   }
 
   .weather .main #temp {
-    font-size: 200px;
+    font-size: 180px;
   }
   .weather .main #graphic img {
     height: 125px;
@@ -55,6 +55,10 @@
 
   .weather #daily .day {
     font-size: min(1.7vw, 25px);
+  }
+
+  .weather #daily .day p:last-child {
+    font-size: min(2.5vw, 28px);
   }
 
   .weather #daily .day img {
@@ -125,7 +129,11 @@
   }
 
   .weather #daily .day {
-    font-size: 20px;
+    font-size: 22px;
+  }
+
+  .weather #daily .day p:last-child {
+    font-size: 28px;
   }
 
   .weather #daily .day img {
@@ -403,10 +411,6 @@ body {
   flex: 1;
   border-radius: var(--card-border-radius);
   border: 1px solid var(--border-color);
-}
-
-.weather #daily .day p:last-child {
-  font-size: 28px;
 }
 
 /* hourly weather */
